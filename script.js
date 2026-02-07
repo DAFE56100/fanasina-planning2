@@ -3,7 +3,7 @@ const tableBody = document.querySelector("#planning tbody");
 function addRow(data = []) {
   const row = document.createElement("tr");
 
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 9; i++) {
     const cell = document.createElement("td");
     const input = document.createElement("input");
     input.value = data[i] || "";
@@ -34,3 +34,4 @@ function loadData() {
 }
 
 loadData();
+
